@@ -30,12 +30,13 @@ if choice == "1":
 	userId = input("userID= ")
 
 def add_user(cookie, userId):
-    try:
+try:
         with requests.session() as session:
             session.cookies['.ROBLOSECURITY'] = cookie
             session.headers['x-csrf-token'] = session.post('https://friends.roblox.com/v1/users/1/request-friendship').headers['x-csrf-token']
             session.post(f'https://friends.roblox.com/v1/users/{userId}/request-friendship')
-    except:
+    except Exception as e:
+        print("An error has occured! You might not have cookies {}".format(e))
         pass
 			
 sleep(1.0)
