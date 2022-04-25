@@ -9,7 +9,7 @@ with open('cookies.txt', 'r') as cookies:
 
 
 
-#start of codes/code
+#start of code
 print("  _____  _     _        ____        _     ______    _                _ ")
 print(" |  __ \| |   | |      |  _ \      | |   |  ____|  (_)              | |")
 print(" | |__) | |__ | |_  __ | |_) | ___ | |_  | |__ _ __ _  ___ _ __   __| |")
